@@ -36,7 +36,7 @@ The Recipe App was built with:
 
 ### Live Demo
 
-You can view a live demo of the Recipe App at COMING SOON.
+You can view a live demo of the Recipe App at [link](https://recipe-app-el3y.onrender.com)
 
 ## Getting Started
 
