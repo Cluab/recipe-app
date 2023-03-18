@@ -1,0 +1,18 @@
+databases:
+  - name: mancoba
+    databaseName: mancoba_dksq
+    user: mancoba_user
+
+services:
+  - type: web
+    name: recipe-app-dev
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mancoba_dksq
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
