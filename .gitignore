@@ -6,7 +6,9 @@
 
 # Ignore bundler config.
 /.bundle
-# /vendor
+/.vendor
+/vendor
+/vendor/bundle
 /node_modules
 
 # Ignore all logfiles and tempfiles.
